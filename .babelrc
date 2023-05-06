@@ -1,0 +1,44 @@
+{
+  "env": {
+    "development": {
+      "plugins": [
+        [
+          "styled-components",
+          {
+            "ssr": true,
+            "displayName": true,
+            "preprocess": false,
+            "pure": true,
+            "namespace": "sc"
+          }
+        ]
+      ]
+    },
+    "production": {
+      "plugins": [
+        [
+          "styled-components",
+          {
+            "ssr": true,
+            "displayName": true,
+            "preprocess": false,
+            "pure": true,
+            "namespace": "sc"
+          }
+        ]
+      ]
+    },
+    "test": {
+      "presets": [
+        ["@babel/preset-env", { "targets": { "node": "current" } }],
+        "@babel/preset-typescript"
+      ]
+    }
+  },
+  "plugins": [
+    [
+      "styled-components",
+      { "ssr": true, "displayName": true, "preprocess": false, "pure": true, "namespace": "sc" }
+    ]
+  ]
+}
