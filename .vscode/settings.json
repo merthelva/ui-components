@@ -1,0 +1,13 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "tabnine.experimentalAutoImports": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.maxComputationTime": 0,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
