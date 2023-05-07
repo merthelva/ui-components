@@ -26,7 +26,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint:staged": "lint-staged && tsc -p tsconfig.json --noEmit",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "lint-staged": {
     "**/*.ts?(x)": [
@@ -50,10 +52,20 @@
     "@babel/core": "^7.21.8",
     "@babel/preset-env": "^7.21.5",
     "@babel/preset-typescript": "^7.21.5",
+    "@storybook/addon-essentials": "^7.0.9",
+    "@storybook/addon-interactions": "^7.0.9",
+    "@storybook/addon-links": "^7.0.9",
+    "@storybook/addon-styling": "^1.0.6",
+    "@storybook/blocks": "^7.0.9",
+    "@storybook/preset-create-react-app": "^7.0.9",
+    "@storybook/react": "^7.0.9",
+    "@storybook/react-webpack5": "^7.0.9",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.59.2",
     "@typescript-eslint/parser": "^5.59.2",
     "babel-jest": "^29.5.0",
+    "babel-plugin-named-exports-order": "^0.0.2",
     "babel-plugin-styled-components": "^2.1.1",
     "eslint": "^8.39.0",
     "eslint-config-prettier": "^8.8.0",
@@ -66,6 +78,9 @@
     "jest-styled-components": "^7.1.1",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
-    "ts-jest": "^29.1.0"
+    "prop-types": "^15.8.1",
+    "storybook": "^7.0.9",
+    "ts-jest": "^29.1.0",
+    "webpack": "^5.82.0"
   }
 }
