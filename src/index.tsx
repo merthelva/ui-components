@@ -1,12 +1,17 @@
-import React from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import reportWebVitals from './reportWebVitals'
 
+import { GlobalStyles, ThemeProvider } from 'theming'
+
 const root = createRoot(document.getElementById('root') as HTMLElement)
 root.render(
-  <React.StrictMode>
-    <div>Hello React</div>
-  </React.StrictMode>,
+  <StrictMode>
+    <GlobalStyles />
+    <ThemeProvider>
+      <div>Hello React</div>
+    </ThemeProvider>
+  </StrictMode>,
 )
 
 // If you want to start measuring performance in your app, pass a function
