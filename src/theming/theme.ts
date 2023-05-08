@@ -1,4 +1,4 @@
-import { FONT_SIZES, FONT_WEIGHTS, LINE_HEIGHTS } from './constants'
+import { BREAKPOINTS, FONT_SIZES, FONT_WEIGHTS, LINE_HEIGHTS } from './constants'
 
 const theme = {
   colors: {
@@ -92,6 +92,7 @@ const theme = {
     white: '#FFFFFF',
     black: '#000000',
   },
+  breakpoints: BREAKPOINTS,
   fontSizes: FONT_SIZES,
   fontWeights: FONT_WEIGHTS,
   lineHeights: LINE_HEIGHTS,

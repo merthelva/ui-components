@@ -1,6 +1,6 @@
 import { css } from 'styled-components'
 import type AppTheme from './theme'
-import type { FontSizesType, FontWeightsType, TextTransformType } from './types'
+import type { BreakpointsType, FontSizesType, FontWeightsType, TextTransformType } from './types'
 
 interface IGetSpacingParams {
   /**
@@ -94,4 +94,10 @@ function getColor(colorName: keyof typeof AppTheme.colors) {
   return ({ theme }: { theme: typeof AppTheme }) => theme.colors[colorName]
 }
 
-export { getSpacing, getTypographyStyle, getColor }
+function getMediaQuery(breakpoint: BreakpointsType) {
+  return ({ theme }: { theme: typeof AppTheme }) => {
+    return `@media (min-width: ${theme.breakpoints[breakpoint]}px)`
+  }
+}
+
+export { getSpacing, getTypographyStyle, getColor, getMediaQuery }

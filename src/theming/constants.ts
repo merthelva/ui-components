@@ -1,3 +1,11 @@
+const BREAKPOINTS = {
+  zero: 0,
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200,
+} as const
+
 const FONT_SIZES = {
   text_xxs: '0.625rem',
   text_xs: '0.75rem',
@@ -41,4 +49,4 @@ const TEXT_TRANSFORM = {
   lowercase: 'lowercase',
 } as const
 
-export { FONT_SIZES, FONT_WEIGHTS, LINE_HEIGHTS, TEXT_TRANSFORM }
+export { BREAKPOINTS, FONT_SIZES, FONT_WEIGHTS, LINE_HEIGHTS, TEXT_TRANSFORM }
