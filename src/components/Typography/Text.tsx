@@ -6,7 +6,7 @@ import { TextStyled } from './Typography.style'
 const Text = forwardRef<HTMLSpanElement, ComponentPropsWithoutRef<'span'> & ITextProps>(
   ({ children, ...props }, ref) => {
     return (
-      <TextStyled ref={ref} {...props}>
+      <TextStyled ref={ref} {...props} aria-disabled={Boolean(props.isDisabled)}>
         {children}
       </TextStyled>
     )

@@ -6,7 +6,7 @@ import { ParagraphStyled } from './Typography.style'
 const Paragraph = forwardRef<HTMLParagraphElement, ComponentPropsWithoutRef<'p'> & IParagraphProps>(
   ({ children, ...props }, ref) => {
     return (
-      <ParagraphStyled ref={ref} {...props}>
+      <ParagraphStyled ref={ref} {...props} aria-disabled={Boolean(props.isDisabled)}>
         {children}
       </ParagraphStyled>
     )

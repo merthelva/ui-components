@@ -8,7 +8,13 @@ const Heading = forwardRef<
   ComponentPropsWithoutRef<'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'> & IHeadingProps
 >(({ children, renderAs = 'h1', ...props }, ref) => {
   return (
-    <HeadingStyled ref={ref} as={renderAs} renderAs={renderAs} {...props}>
+    <HeadingStyled
+      ref={ref}
+      as={renderAs}
+      renderAs={renderAs}
+      {...props}
+      aria-disabled={Boolean(props.isDisabled)}
+    >
       {children}
     </HeadingStyled>
   )
