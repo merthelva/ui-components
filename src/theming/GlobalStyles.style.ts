@@ -8,7 +8,7 @@ const globalStyles = createGlobalStyle`
     *::before,
     *::after {
       box-sizing: border-box;
-      font-family: 'Work Sans', sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
     }
 
