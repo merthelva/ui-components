@@ -19,20 +19,26 @@ const meta: Meta<typeof Typography> = {
       control: { type: 'select' },
       if: { arg: 'type', neq: 'text' },
     },
+    color: {
+      if: { arg: 'isDisabled', truthy: false },
+    },
     fontSize: {
       options: Object.keys(FONT_SIZES),
       control: { type: 'select' },
-      if: { arg: 'type', eq: 'text' || 'paragraph' },
+      // if: { arg: 'type', eq: 'text' || 'paragraph' }, // FIXME: Filtering by multiple values is not available in Storybook right now. When published, apply it as required.
     },
     fontWeight: {
       options: Object.keys(FONT_WEIGHTS),
-      control: { type: 'select' },
-      if: { arg: 'type', eq: 'text' || 'paragraph' },
+      control: { type: 'inline-radio' },
+      // if: { arg: 'type', eq: 'text' || 'paragraph' }, // FIXME: Filtering by multiple values is not available in Storybook right now. When published, apply it as required.
     },
     breakWord: {
       options: TypographyConstants.BreakWordTypeEnum,
-      control: { type: 'select' },
+      control: { type: 'inline-radio' },
       if: { arg: 'type', eq: 'paragraph' },
+    },
+    transform: {
+      control: { type: 'inline-radio' },
     },
   },
 }
@@ -46,6 +52,7 @@ export const DEFAULT: Story = {
     type: 'text',
     align: 'left',
     color: 'primary',
+    isDisabled: false,
   },
 }
 
