@@ -1,5 +1,5 @@
 import GlobalStyles from './GlobalStyles.style'
-import ThemeProvider from './ThemeProvider'
+import ThemeProvider, { TestWithThemeProvider } from './ThemeProvider'
 import theme from './theme'
 
 export type {
@@ -10,4 +10,4 @@ export type {
   ThemeColorKeysType,
 } from './types'
 export * as ThemingUtils from './utils'
-export { theme, GlobalStyles, ThemeProvider }
+export { theme, GlobalStyles, ThemeProvider, TestWithThemeProvider }
