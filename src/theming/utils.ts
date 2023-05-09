@@ -28,9 +28,9 @@ interface IGetSpacingParams {
 }
 
 interface IGetTypographyStyle {
-  fontSize: FontSizesType | undefined
-  weight: FontWeightsType | undefined
-  transform: TextTransformType | undefined
+  fontSize?: FontSizesType
+  weight?: FontWeightsType
+  transform?: TextTransformType
 }
 
 function getSpacing({ values, ...options }: IGetSpacingParams) {
