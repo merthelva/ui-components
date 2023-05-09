@@ -1,6 +1,12 @@
 import { css } from 'styled-components'
 import type AppTheme from './theme'
-import type { BreakpointsType, FontSizesType, FontWeightsType, TextTransformType } from './types'
+import type {
+  BreakpointsType,
+  FontSizesType,
+  FontWeightsType,
+  TextTransformType,
+  ThemeColorKeysType,
+} from './types'
 
 interface IGetSpacingParams {
   /**
@@ -22,9 +28,9 @@ interface IGetSpacingParams {
 }
 
 interface IGetTypographyStyle {
-  fontSize?: FontSizesType
-  weight?: FontWeightsType
-  transform?: TextTransformType
+  fontSize: FontSizesType | undefined
+  weight: FontWeightsType | undefined
+  transform: TextTransformType | undefined
 }
 
 function getSpacing({ values, ...options }: IGetSpacingParams) {
@@ -90,7 +96,7 @@ function getTypographyStyle({
   `
 }
 
-function getColor(colorName: keyof typeof AppTheme.colors) {
+function getColor(colorName: ThemeColorKeysType) {
   return ({ theme }: { theme: typeof AppTheme }) => theme.colors[colorName]
 }
 
