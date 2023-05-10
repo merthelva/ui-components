@@ -5,7 +5,7 @@ import { TypographyConstants } from 'components/Typography'
 import { FONT_SIZES, FONT_WEIGHTS } from 'theming/constants'
 
 const meta: Meta<typeof Typography> = {
-  title: 'Typography',
+  title: 'Data Display/Typography',
   component: Typography,
   tags: ['autodocs'],
   decorators: [
