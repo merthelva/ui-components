@@ -88,7 +88,6 @@ const theme = {
 
     primary: '#A31410',
     secondary: '#2372AD',
-    tertiary: '#EEF205',
     white: '#FFFFFF',
     black: '#000000',
   },
