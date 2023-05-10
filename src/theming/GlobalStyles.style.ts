@@ -1,4 +1,5 @@
 import { createGlobalStyle, css } from 'styled-components'
+import theme from './theme'
 
 // Why we need to use "css" helper? Please refer to https://github.com/styled-components/vscode-styled-components/issues/175#issuecomment-504113264
 // Custom CSS Reset: Please refer to https://www.joshwcomeau.com/css/custom-css-reset/
@@ -52,5 +53,14 @@ const globalStyles = createGlobalStyle`
     }
   `}  
 `
+
+export const VARIANT_COLORS_SCHEMA = {
+  primary: theme.colors.primary,
+  secondary: theme.colors.secondary,
+  info: theme.colors.blue300,
+  success: theme.colors.green300,
+  warning: theme.colors.yellow500,
+  error: theme.colors.red400,
+} as const
 
 export default globalStyles

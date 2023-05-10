@@ -1,4 +1,4 @@
-import GlobalStyles from './GlobalStyles.style'
+import GlobalStyles, { VARIANT_COLORS_SCHEMA } from './GlobalStyles.style'
 import ThemeProvider, { TestWithThemeProvider } from './ThemeProvider'
 import theme from './theme'
 
@@ -10,4 +10,4 @@ export type {
   ThemeColorKeysType,
 } from './types'
 export * as ThemingUtils from './utils'
-export { theme, GlobalStyles, ThemeProvider, TestWithThemeProvider }
+export { theme, GlobalStyles, VARIANT_COLORS_SCHEMA, ThemeProvider, TestWithThemeProvider }
