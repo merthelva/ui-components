@@ -28,7 +28,8 @@
     "lint:staged": "lint-staged && tsc -p tsconfig.json --noEmit",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "generate:iconset": "node ./src/scripts/icon-generator/generateIconSetAndTypes.js"
   },
   "lint-staged": {
     "**/*.ts?(x)": [
