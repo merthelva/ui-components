@@ -1,0 +1,5 @@
+**/dist/**/*
+**/storybook-static/**/*
+**/src/components/Icon/iconSet.json
+**/src/components/Icon/iconNames.types.ts
+
