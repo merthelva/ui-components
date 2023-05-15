@@ -1,0 +1,1 @@
+export type IconNames = "cancel" | "danger" | "download" | "ellipsis-vertical" | "filter" | "info" | "invisible" | "success" | "user" | "visible" | "warning";
