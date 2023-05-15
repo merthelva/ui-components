@@ -57,10 +57,10 @@ const globalStyles = createGlobalStyle`
 export const VARIANT_COLORS_SCHEMA = {
   primary: theme.colors.primary,
   secondary: theme.colors.secondary,
-  info: theme.colors.blue300,
-  success: theme.colors.green300,
-  warning: theme.colors.yellow500,
-  error: theme.colors.red400,
+  info: theme.colors.blue400,
+  success: theme.colors.green400,
+  warning: theme.colors.yellow600,
+  error: theme.colors.red500,
 } as const
 
 export default globalStyles
