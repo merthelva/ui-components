@@ -62,12 +62,12 @@ const FlashingDots = styled.span<Omit<ILoadingProps, 'type'>>`
   }
 
   &::before {
-    left: ${({ size }) => (size || 12) + 4}px;
+    right: ${({ size }) => (size || 12) + 4}px;
     animation-delay: 1s;
   }
 
   &::after {
-    left: ${({ size }) => ((size || 12) + 4) * 2}px;
+    left: ${({ size }) => (size || 12) + 4}px;
     animation-delay: 2s;
   }
 `
