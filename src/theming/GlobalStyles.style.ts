@@ -13,8 +13,12 @@ const globalStyles = createGlobalStyle`
       margin: 0;
     }
 
-    html:focus-within {
-      scroll-behavior: smooth;
+    html {
+      font-size: 0.875rem;
+
+      &:focus-within {
+        scroll-behavior: smooth;
+      }
     }
 
     input,
