@@ -25,7 +25,8 @@
             "pure": true,
             "namespace": "sc"
           }
-        ]
+        ],
+        ["react-remove-properties", { "properties": ["data-testid"] }]
       ]
     },
     "test": {
