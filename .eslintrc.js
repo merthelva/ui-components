@@ -84,12 +84,21 @@ module.exports = {
         format: ['PascalCase'],
         prefix: ['is', 'should', 'has', 'can'],
       },
-      // this configuration is for React component naming convention
+      // this configuration is for React component naming convention. Note that "filter" is applied here.
+      // Be sure to prefix the name of the setter of "useState" hook with "set" and also be sure to prefix
+      // the name of each handler function of a React component with "handle". Otherwise, you will receive
+      // lint error that says that variable name nust follow the format: PascalCase.
+      // ----- Until finding a better linting rule for setter name of "useState" hook and functions of component,
+      //       this rule is used.
       {
         selector: 'variable',
         types: ['function'],
         modifiers: ['const'],
         format: ['PascalCase'],
+        filter: {
+          regex: '^(handle|set)',
+          match: false,
+        },
       },
       // this configuration is for all "const" defined variable naming convention except for React component name and boolean type variable
       {

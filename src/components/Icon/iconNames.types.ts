@@ -1,1 +1,1 @@
-export type IconNames = "cancel" | "danger" | "download" | "ellipsis-vertical" | "filter" | "info" | "invisible" | "success" | "user" | "visible" | "warning";
+export type IconNames = "cancel" | "chevron-down" | "chevron-up" | "danger" | "download" | "ellipsis-vertical" | "filter" | "info" | "invisible" | "success" | "user" | "visible" | "warning";
