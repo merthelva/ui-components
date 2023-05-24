@@ -115,6 +115,10 @@ const Wrapper = styled.button<IButtonProps>`
       variant: variant || 'primary',
       hasOutline: Boolean(hasOutline),
     })}
+    
+  &:focus {
+    border: 1.5px solid ${ThemingUtils.getColor('blue800')};
+  }
 `
 
 export default Wrapper
