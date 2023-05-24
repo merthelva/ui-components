@@ -28,6 +28,10 @@ const globalStyles = createGlobalStyle`
       font: inherit;
     }
 
+    small {
+      font-size: 0.8rem;
+    }
+
     p,
     h1,
     h2,
