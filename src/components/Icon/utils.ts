@@ -1,4 +1,4 @@
-import React from 'react'
+import { createElement } from 'react'
 
 import type { ThemeColorKeysType } from 'theming'
 import { theme } from 'theming'
@@ -54,7 +54,7 @@ function createSvgIcon({
       baseChildProps['style'] = { [convertToCamelCaseFromKebabCase(propName)]: propValue }
     }
 
-    return React.createElement(
+    return createElement(
       child.tagName,
       { ...baseChildProps, key: `${child.tagName}${index}` },
       createSvgIcon({
