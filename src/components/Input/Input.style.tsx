@@ -51,11 +51,18 @@ const InputWrapper = styled(Flex)<{
   $size?: IInputProps['inputSize'] | undefined
   $hasError?: boolean
   $hasSuccess?: boolean
+  $isDisabled?: boolean
 }>`
   position: relative;
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid ${ThemingUtils.getColor('gray400')};
+  ${({ $isDisabled }) =>
+    $isDisabled &&
+    css`
+      cursor: not-allowed;
+      background-color: ${ThemingUtils.getColor('gray200')};
+    `}
   ${({ $size }) => INPUT_SIZE_STYLES[$size || 'medium']};
   ${({ $hasError }) =>
     Boolean($hasError) &&

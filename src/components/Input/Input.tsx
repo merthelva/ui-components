@@ -72,6 +72,7 @@ const Input = forwardRef<HTMLInputElement, ComponentPropsWithoutRef<'input'> & I
           $size={props.inputSize}
           $hasError={Boolean(props.errorMsg)}
           $hasSuccess={Boolean(props.successMsg)}
+          $isDisabled={Boolean(props.disabled)}
         >
           {props.inputPrefix && <Styled.AddonWrapper>{props.inputPrefix}</Styled.AddonWrapper>}
           <Flex isFullHeight alignment={{ secondary: 'stretch' }}>
