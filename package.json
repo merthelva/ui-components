@@ -30,7 +30,8 @@
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "generate:iconset": "node ./src/scripts/icon-generator/generateIconSetAndTypes.js"
+    "generate:iconset": "node ./src/scripts/icon-generator/generateIconSetAndTypes.js",
+    "chromatic": "chromatic --exit-zero-on-changes"
   },
   "lint-staged": {
     "**/*.ts?(x)": [
@@ -71,6 +72,7 @@
     "babel-plugin-named-exports-order": "^0.0.2",
     "babel-plugin-react-remove-properties": "^0.3.0",
     "babel-plugin-styled-components": "^2.1.1",
+    "chromatic": "^6.17.4",
     "eslint": "^8.39.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-typescript": "^3.5.5",
@@ -87,5 +89,7 @@
     "storybook": "^7.0.9",
     "ts-jest": "^29.1.0",
     "webpack": "^5.82.0"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "components-lib@0.1.0"
 }

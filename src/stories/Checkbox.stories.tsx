@@ -42,7 +42,7 @@ export const DEFAULT: Story = {
     children: 'Chekbox label',
     checkboxSize: 'medium',
     disabled: false,
-    required: false,
+    required: true,
     isFullWidth: false,
     variant: 'primary',
     errorMsg: '',
