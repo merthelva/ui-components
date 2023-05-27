@@ -2,7 +2,11 @@
 
 ## What is this project about?
 
-This project is a personal repository, which was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and it represents a collection of the most common UI components's implementation. It mainly includes the code for component itself -including both UI logic and styling-, the code for respective Stor(y|ies) and the code for respective unit test(s). Apart from those, theming, sample color palette and global styles have been provided. It is currently under process and it has been being updated in time. When the project is completed, this part of the documentation will be changed as required. Only downside of this repository for the time being is that since it is not completed yet, there is no published version and none can have a look at the project output on the web. Please keep calm, brace yourself and wait for the published version! :)
+This project is a personal repository, which was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and it represents a collection of the most common UI components's implementation. It mainly includes the code for component itself -including both UI logic and styling-, the code for respective Stor(y|ies) and the code for respective unit test(s). Apart from those, theming, sample color palette and global styles have been provided. Note that this project is currently under process and it has been being updated in time whenever more component(s) is/are needed to be added. When the project is completed, this part of the documentation will be changed as required. So, please keep calm, brace yourself and wait for the completed version! :) Still, currently available version of the project can be viewed [here](https://64725a0d7e193771886bdb49-nmjeetlbmt.chromatic.com/) in an isolated environment.
+
+## Before you go further
+
+When looking at the code for this repository, you may realize that there is no `test` file written for `Checkbox` component. The reason for this is that the component itself is developed using [@ariakit/react](https://ariakit.org/examples/checkbox-custom) package for accessibility concern and this package has an incompatibility with `Create React App (CRA)` as `CRA` has been a bit outdated. As suggested [here](https://github.com/ariakit/ariakit/issues/2400#issuecomment-1546808180), the project is considered to be upgraded to use [Vite](https://vitejs.dev/) in order to resolve this issue in the future.
 
 ## Tech stack at a glance
 
