@@ -48,7 +48,7 @@ const ValidationText = styled.small<{ validation: 'success' | 'error' }>`
 `
 
 const InputWrapper = styled(Flex)<{
-  $size?: IInputProps['inputSize'] | undefined
+  $size?: IInputProps['inputSize']
   $hasError?: boolean
   $hasSuccess?: boolean
   $isDisabled?: boolean

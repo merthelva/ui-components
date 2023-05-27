@@ -56,15 +56,15 @@ function getSpacing({ values, ...options }: IGetSpacingParams) {
     let spacingStyle = ''
     if ('vertical' in values) {
       spacingStyle += `
-        ${spacingType}-top: ${values.vertical}${spacingUnit};
-        ${spacingType}-bottom: ${values.vertical}${spacingUnit};
+        ${spacingType}-top: ${Number(values.vertical)}${spacingUnit};
+        ${spacingType}-bottom: ${Number(values.vertical)}${spacingUnit};
     `
     }
 
     if ('horizontal' in values) {
       spacingStyle += `
-        ${spacingType}-right: ${values.horizontal}${spacingUnit};
-        ${spacingType}-left: ${values.horizontal}${spacingUnit};
+        ${spacingType}-right: ${Number(values.horizontal)}${spacingUnit};
+        ${spacingType}-left: ${Number(values.horizontal)}${spacingUnit};
     `
     }
     return css`
