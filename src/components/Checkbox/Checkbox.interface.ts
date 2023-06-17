@@ -1,7 +1,7 @@
 import type { ComponentPropsWithoutRef } from 'react'
 import type { ComponentSizeType, VariantType } from 'shared/types'
 
-interface ICheckboxProps {
+interface IProps {
   /**
    * The size of the component. It can be "small" | "medium" | "large".
    * You can use Intellisense feature of your editor for this prop value.
@@ -26,6 +26,6 @@ interface ICheckboxProps {
   // isIndeterminate?: boolean
 }
 
-interface ICheckboxInputProps extends ICheckboxProps, ComponentPropsWithoutRef<'input'> {}
+interface ICheckboxProps extends IProps, ComponentPropsWithoutRef<'input'> {}
 
-export type { ICheckboxProps, ICheckboxInputProps }
+export type { ICheckboxProps, IProps }
