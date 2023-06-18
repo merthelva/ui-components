@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { useState } from 'react'
 
-import Radio from 'components/RadioGroup/Radio/Radio'
+import { Radio } from 'components'
 import type { ChangeEvent } from 'react'
 import { ComponentSizeEnum, VariantTypeEnum } from 'shared/constants'
 
