@@ -22,7 +22,9 @@ const ITEM_HEADING_SIZE_STYLES = {
   [ComponentSizeEnum.large]: largeItemHeadingStyle,
 }
 
-const Container = styled.div``
+const Container = styled.div`
+  contain: content;
+`
 
 const Item = styled.div``
 
