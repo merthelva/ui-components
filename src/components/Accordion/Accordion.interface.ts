@@ -17,6 +17,13 @@ interface IAccordionItem {
    */
   detail: TitleAndDetailType
   /**
+   * This props is used to provide a link between the content of a panel and the
+   * corresponding panel heading, i.e., its purpose is to show which panel heading
+   * controls the content of the corresponding panel content and it is mainly here
+   * for accessibility reason.
+   */
+  headingId: string
+  /**
    * This prop is used to discriminate each accordion item, so be sure that while populating
    * "data" prop, this field for each entry will be unique.
    */

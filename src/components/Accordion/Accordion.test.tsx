@@ -12,6 +12,7 @@ const ACCORDION_DATA: IAccordionProps['data'] = [
       content: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, consectetur tenetur unde distinctio possimus cupiditate sunt enim fugit eveniet eaque eius voluptatem? Consequuntur a soluta distinctio cupiditate repudiandae quidem vitae?
   Quam, doloremque. Consequuntur aliquid nihil accusamus sunt est ea ipsam sit assumenda ducimus architecto nam dolorem ex adipisci necessitatibus vero quod ullam itaque, laudantium deserunt qui quam atque. Repellat, esse.`,
     },
+    headingId: 'heading_id_1',
     headingButtonId: 'button_id_1',
     panelId: 'panel_id_1',
   },
@@ -22,6 +23,7 @@ const ACCORDION_DATA: IAccordionProps['data'] = [
       content: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, consectetur tenetur unde distinctio possimus cupiditate sunt enim fugit eveniet eaque eius voluptatem? Consequuntur a soluta distinctio cupiditate repudiandae quidem vitae?
   Quam, doloremque. Consequuntur aliquid nihil accusamus sunt est ea ipsam sit assumenda ducimus architecto nam dolorem ex adipisci necessitatibus vero quod ullam itaque, laudantium deserunt qui quam atque. Repellat, esse.`,
     },
+    headingId: 'heading_id_2',
     headingButtonId: 'button_id_2',
     panelId: 'panel_id_2',
   },
@@ -32,6 +34,7 @@ const ACCORDION_DATA: IAccordionProps['data'] = [
       content: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, consectetur tenetur unde distinctio possimus cupiditate sunt enim fugit eveniet eaque eius voluptatem? Consequuntur a soluta distinctio cupiditate repudiandae quidem vitae?
   Quam, doloremque. Consequuntur aliquid nihil accusamus sunt est ea ipsam sit assumenda ducimus architecto nam dolorem ex adipisci necessitatibus vero quod ullam itaque, laudantium deserunt qui quam atque. Repellat, esse.`,
     },
+    headingId: 'heading_id_3',
     headingButtonId: 'button_id_3',
     panelId: 'panel_id_3',
   },

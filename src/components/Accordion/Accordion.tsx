@@ -52,7 +52,7 @@ const AccordionCmp = forwardRef<HTMLDivElement, ComponentPropsWithoutRef<'div'> 
       <Accordion.Container ref={ref} role="tablist">
         {data.map((item, index) => (
           <Accordion.Item key={item.headingButtonId}>
-            <Accordion.ItemHeading role="heading" aria-level={3} size={size || 'medium'}>
+            <Accordion.ItemHeading id={item.headingId} size={size || 'medium'}>
               <Accordion.ItemHeadingButton
                 role="button"
                 id={item.headingButtonId}
@@ -83,6 +83,9 @@ const AccordionCmp = forwardRef<HTMLDivElement, ComponentPropsWithoutRef<'div'> 
             </Accordion.ItemHeading>
             <Accordion.ItemPanel
               id={item.panelId}
+              aria-labelledby={item.headingId}
+              aria-hidden={!itemsState[item.headingButtonId]}
+              role="region"
               data-testid={item.panelId}
               isVisible={itemsState[item.headingButtonId]}
               isLastPanel={index === data.length - 1}

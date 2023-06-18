@@ -26,7 +26,7 @@ const Container = styled.div``
 
 const Item = styled.div``
 
-const ItemHeading = styled.div<Pick<IAccordionProps, 'size'>>`
+const ItemHeading = styled.h2<Pick<IAccordionProps, 'size'>>`
   background-color: ${ThemingUtils.getColor('gray50')};
   border-top: 1px solid ${ThemingUtils.getColor('gray400')};
   cursor: pointer;
