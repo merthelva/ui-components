@@ -5,6 +5,16 @@ import styled, { css } from 'styled-components'
 import { ThemingUtils, VARIANT_COLORS_SCHEMA } from 'theming'
 import type { ICheckboxProps } from './Checkbox.interface'
 
+const visuallyHiddenStyle = css`
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+`
+
 const smallCheckboxStyle = css`
   max-height: 14px;
   max-width: 14px;
@@ -71,20 +81,14 @@ const Label = styled.label<Pick<ICheckboxProps, 'variant' | 'disabled' | 'requir
       }
     `}
 
-  &[data-focus-visible] {
+  &:focus-within {
     ${ThemingUtils.getSpacing({ values: [2] })};
     outline: 1px solid ${({ variant }) => VARIANT_COLORS_SCHEMA[variant || 'primary']};
   }
 `
 
 const VisuallyHidden = styled.input.attrs({ type: 'checkbox' })`
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+  ${visuallyHiddenStyle};
 `
 
 const CheckMark = styled.span<Pick<ICheckboxProps, 'checkboxSize' | 'disabled' | 'variant'>>`
@@ -111,4 +115,4 @@ const CheckMark = styled.span<Pick<ICheckboxProps, 'checkboxSize' | 'disabled' |
 
 const ValidationText = styled(StyledInput.ValidationText)``
 
-export { CheckMark, Label, ValidationText, VisuallyHidden, Wrapper }
+export { CheckMark, Label, ValidationText, VisuallyHidden, Wrapper, visuallyHiddenStyle }

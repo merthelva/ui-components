@@ -1,11 +1,9 @@
 import Icon from 'components/Icon'
-import { forwardRef, useMemo, useState } from 'react'
+import { forwardRef, useMemo } from 'react'
 import type { ICheckboxProps } from './Checkbox.interface'
 import * as Styled from './Checkbox.style'
 
 const Checkbox = forwardRef<HTMLInputElement, ICheckboxProps>(({ children, ...props }, ref) => {
-  const [isFocusVisible, setIsFocusVisible] = useState(false)
-
   const checkmarkSize = useMemo(() => {
     switch (props.checkboxSize) {
       case 'small':
@@ -43,7 +41,6 @@ const Checkbox = forwardRef<HTMLInputElement, ICheckboxProps>(({ children, ...pr
         required={props.required}
         variant={props.variant}
         data-checked={isChecked}
-        data-focus-visible={isFocusVisible || undefined}
       >
         <Styled.VisuallyHidden
           {...props}
@@ -51,8 +48,6 @@ const Checkbox = forwardRef<HTMLInputElement, ICheckboxProps>(({ children, ...pr
           checked={isChecked}
           ref={ref}
           value={props.value as string}
-          onFocus={() => setIsFocusVisible(true)}
-          onBlur={() => setIsFocusVisible(false)}
         />
         <Styled.CheckMark
           checkboxSize={props.checkboxSize}
